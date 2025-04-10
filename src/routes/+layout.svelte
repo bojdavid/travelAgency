@@ -17,7 +17,7 @@
   {@render children()}
 </main>
 <footer>
-  <div class="mx-auto w-4xl">
+  <div class="mx-auto w-4xl mb-20">
     <Footer />
   </div>
 </footer>
