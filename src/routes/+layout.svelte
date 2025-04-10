@@ -1,8 +1,8 @@
 <script lang="ts">
   //import "../../src/lib/styles/app.css";
   import "../lib/styles/app.css";
-  import Nav from "$lib/components/navigation/Nav.svelte";
-  import Footer from "$lib/components/navigation/Footer.svelte";
+  import Nav from "../lib/components/navigation/Nav.svelte";
+  import Footer from "../lib/components/navigation/Footer.svelte";
   let { children } = $props();
 </script>
 
@@ -21,3 +21,9 @@
     <Footer />
   </div>
 </footer>
+
+<style>
+  :global(.light-font) {
+    font-weight: 400;
+  }
+</style>

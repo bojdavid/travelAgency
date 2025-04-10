@@ -1,15 +1,43 @@
 <script lang="ts">
+  interface Options {
+    header: string;
+    text: string;
+    icon: string;
+  }
+  const discoverOptions: Options[] = [
+    {
+      header: "Handpicked Destinations",
+      text: "Only the best locations, curated for unforgettable experiences",
+      icon: '<i class="fa-solid fa-globe"></i>',
+    },
+    {
+      header: "Seamless Booking",
+      text: "Stress-free reservations with flexible options",
+      icon: "<span>🧾</span>",
+    },
+    {
+      header: "Expert Travel Guides",
+      text: "Get personalized recommendations from industry pros",
+      icon: "<span>📘</span>",
+    },
+    {
+      header: "Hassle-Free Planning",
+      text: "We handle the details, you enjoy the journey",
+      icon: '<i class="fa-solid fa-circle-check"></i>',
+    },
+  ];
 </script>
 
 <section class=" px-6 py-16 text-center">
   <!-- Heading -->
-  <h1 class="text-4xl font-bold mb-4">
-    Travel Smarter, <br />
-    Explore Better 🌍🚀
+  <h1 class="text-[2.45rem] mb-5 font-semibold">
+    <div class="mb-2">Travel Smarter 🚀,</div>
+
+    Explore Better 🌍
   </h1>
 
   <!-- Subheading -->
-  <p class="text-gray-500 max-w-2xl mb-6 text-lg">
+  <p class="text-gray-500 max-w-2xl mb-6 text-2xl mx-auto">
     Handpicked destinations, seamless bookings, and unbeatable
     experiences—because your journey deserves the best
   </p>
@@ -17,9 +45,9 @@
   <!-- CTA Button -->
   <div class="mb-12">
     <button
-      class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition"
+      class="bg-blue-600 text-white px-12 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-2xl light-font"
     >
-      Discover →
+      Discover <i class="fa-solid fa-circle-arrow-right"></i>
     </button>
   </div>
 
@@ -27,42 +55,21 @@
   <div
     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto"
   >
-    <!-- Card 1 -->
-    <div
-      class="bg-gradient-to-br from-blue-600 to-blue-500 text-white p-6 rounded-xl text-left"
-    >
-      <div class="text-3xl mb-3">🌐</div>
-      <h3 class="text-xl font-semibold mb-1">Handpicked Destinations</h3>
-      <p class="text-sm">
-        Only the best locations, curated for unforgettable experiences
-      </p>
-    </div>
-
-    <!-- Card 2 -->
-    <div
-      class="bg-gradient-to-br from-blue-600 to-blue-500 text-white p-6 rounded-xl text-left"
-    >
-      <div class="text-3xl mb-3">🧾</div>
-      <h3 class="text-xl font-semibold mb-1">Seamless Booking</h3>
-      <p class="text-sm">Stress-free reservations with flexible options</p>
-    </div>
-
-    <!-- Card 3 -->
-    <div
-      class="bg-gradient-to-br from-blue-600 to-blue-500 text-white p-6 rounded-xl text-left"
-    >
-      <div class="text-3xl mb-3">📘</div>
-      <h3 class="text-xl font-semibold mb-1">Expert Travel Guides</h3>
-      <p class="text-sm">Get personalized recommendations from industry pros</p>
-    </div>
-
-    <!-- Card 4 -->
-    <div
-      class="bg-gradient-to-br from-blue-600 to-blue-500 text-white p-6 rounded-xl text-left"
-    >
-      <div class="text-3xl mb-3">✅</div>
-      <h3 class="text-xl font-semibold mb-1">Hassle-Free Planning</h3>
-      <p class="text-sm">We handle the details, you enjoy the journey</p>
-    </div>
+    <!-- Cards -->
+    {#each discoverOptions as card}
+      <div
+        class="bg-gradient-to-br from-blue-500 to-blue-900 text-white p-5
+                rounded-2xl text-left w-sm h-60
+                flex flex-row justify-center items-center"
+      >
+        <div class="m-auto">
+          <div class="text-4xl mb-3">{@html card.icon}</div>
+          <h3 class="text-3xl font-semibold mb-1 light-font">{card.header}</h3>
+          <p class="text-md">
+            {card.text}
+          </p>
+        </div>
+      </div>
+    {/each}
   </div>
 </section>
