@@ -1,1 +1,1 @@
-<div>Empty second section</div>
+<div class="text-5xl">Empty second section</div>
