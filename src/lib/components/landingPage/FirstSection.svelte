@@ -7,7 +7,9 @@
     "text-sm text-gray-400 mt-1 font-light";
 </script>
 
-<section class="py-16 text-center relative overflow-hidden w-full">
+<section
+  class="py-16 text-center relative overflow-hidden w-full max-w-[1440px]"
+>
   <!-- Floating Icons (emoji placeholders) -->
   <div
     class="absolute top-10 left-45 text-5xl rotate-25 {surroundImageStyle}  shadow-inner-lg"

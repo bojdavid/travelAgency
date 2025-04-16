@@ -10,10 +10,9 @@
 
   <!-- Card Content -->
   <div class="px-5 text-lg">
-    <h2 class="text-4xl font-semibold mb-2">Bahamas</h2>
-    <p class="text-gray-500 mb-4 text-lg light-font w-lg">
-      Breathtaking tropical paradise with crystal-clear waters, powdery
-      white-sand beaches, and vibrant marine life
+    <h2 class="text-4xl font-semibold mb-2">{place}</h2>
+    <p class="text-gray-500 mb-4 text-lg light-font w-md">
+      {description}
     </p>
 
     <div class="flex justify-evenly text-sm mb-4 gap-6">
@@ -21,21 +20,19 @@
         <div class="text-lg w-40">
           <p class="text-gray-400 text-lg light-font">Category</p>
           <p>
-            <span class="font-semibold">Luxury</span> •
-            <span class="font-semibold">Beach</span>
-            • <span class="font-semibold">Adventure</span>
+            <span class="font-semibold">{category}</span> •
           </p>
         </div>
 
         <div class="text-xl mr-7">
           <p class="text-gray-400 text-lg light-font">Rating</p>
-          <p>⭐ 4.8</p>
+          <p>⭐ {rating.rating}</p>
         </div>
         <div class="text-xl">
           <p class="text-gray-400 text-lg light-font">Pricing</p>
           <p class="text-gray-400">
             <span class="text-black">From</span>
-            <span class="font-semibold text-black">$1800</span> / Person
+            <span class="font-semibold text-black">${price}</span> / Person
           </p>
         </div>
       </div>

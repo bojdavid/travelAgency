@@ -1,5 +1,8 @@
 <script lang="ts">
   import CardSecond from "./CardSecond.svelte";
+  import { slide } from "svelte/transition";
+
+  import { fly } from "svelte/transition";
   let card;
 
   interface CardData {
@@ -93,6 +96,20 @@
     },
   ];
   let cardNumber: number = $state(0);
+  const previousCard = () => {
+    if (cardNumber == 0) {
+      cardNumber = cardDataList.length - 1;
+    } else {
+      cardNumber--;
+    }
+  };
+  const nextCard = () => {
+    if (cardNumber == cardDataList.length - 1) {
+      cardNumber = 0;
+    } else {
+      cardNumber++;
+    }
+  };
 </script>
 
 <section>
@@ -117,6 +134,7 @@
 <section class="w-5xl mx-auto py-16 flex items-center justify-center relative">
   <!-- Left Arrow -->
   <button
+    onclick={previousCard}
     aria-label="prev"
     class="absolute left-5 bg-gray-100 hover:bg-gray-200 p-4 rounded-full text-xl shadow"
   >
@@ -137,17 +155,22 @@
     ></div>
 
     <!-- Main Card -->
-    <CardSecond
-      place={cardDataList[cardNumber].place}
-      description={cardDataList[cardNumber].description}
-      category={cardDataList[cardNumber].category}
-      price={cardDataList[cardNumber].price}
-      rating={cardDataList[cardNumber].rating}
-    />
+    {#key cardNumber}
+      <div transition:slide>
+        <CardSecond
+          place={cardDataList[cardNumber].place}
+          description={cardDataList[cardNumber].description}
+          category={cardDataList[cardNumber].category}
+          price={cardDataList[cardNumber].price}
+          rating={cardDataList[cardNumber].rating}
+        />
+      </div>
+    {/key}
   </div>
 
   <!-- Right Arrow -->
   <button
+    onclick={nextCard}
     aria-label="next"
     class="absolute right-5 bg-gray-100 hover:bg-gray-200 p-4 rounded-full text-xl shadow"
   >
