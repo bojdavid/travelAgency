@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { headingStyle } = $props();
+  const headingStyle: string = "text-[24px] font-[500] text-blue-700 mb-2";
 </script>
 
 <section class=" py-10 mt-12 rounded-md mx-auto w-[527px]">

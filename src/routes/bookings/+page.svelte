@@ -2,7 +2,7 @@
   import Card from "$lib/components/bookings/Card.svelte";
   import TopActivities from "$lib/components/bookings/TopActivities.svelte";
   import WhereToStay from "$lib/components/bookings/whereToStay.svelte";
-  import NewsLetter from "$lib/components/bookings/NewsLetter.svelte";
+  import NewsLetter from "$lib/components/NewsLetter.svelte";
 
   const headingStyle: string = "text-[24px] font-[500] text-blue-700 mb-2";
   const whereToStayListHeading = "text-[20px] font-[500] leading-[27px]";
@@ -58,7 +58,7 @@
     </div>
     <div class={marginBottom}>
       <!-- Newsletter -->
-      <NewsLetter {headingStyle} />
+      <NewsLetter />
     </div>
   </main>
 </section>
