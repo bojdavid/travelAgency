@@ -55,17 +55,17 @@
     <!-- Top Contact Info Row -->
     <div class="flex justify-between text-[20px] items-center text-gray-700">
       <div class="flex justify-evenly gap-2">
-        <span>📞 <strong>Call Us:</strong></span>
-        <a href="tel:+2349038263356" class="text-blue-600">+234 903 826 3356</a>
+        <span>📞 Call Us:</span>
+        <a href="tel:+2349038263356" class="text-primary">+234 903 826 3356</a>
       </div>
       <div class="flex items-center gap-2">
-        <span>✉️ <strong>Email Us:</strong></span>
-        <a href="mailto:SoarTravelagency@gmail.com" class="text-blue-600"
+        <span><i class="fa-solid fa-envelope"></i> Email Us:</span>
+        <a href="mailto:SoarTravelagency@gmail.com" class="text-primary"
           >SoarTravelagency@gmail.com</a
         >
       </div>
       <div class="flex items-center gap-2">
-        <span>🏷️ <strong>Our Socials:</strong></span>
+        <span><i class="fa-solid fa-tag"></i> Our Socials:</span>
         <div class="flex items-center gap-2 text-blue-600 text-lg">
           <a href="#">X</a>
           <a href="#">📷</a>

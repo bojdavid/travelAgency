@@ -21,7 +21,7 @@
   ];
 </script>
 
-<div class="bg-blue-600 text-white rounded-4xl px-9 py-10 font-hanken">
+<div class="bg-primary text-white rounded-4xl px-9 py-10 font-hanken">
   <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
     <!-- Logo -->
     <div class="w-[100px]">

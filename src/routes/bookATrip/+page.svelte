@@ -164,7 +164,7 @@
 </script>
 
 <!-- ===================== HEADER ===================== -->
-<header class="w-full border-b border-gray-100">
+<header class="w-full my-20">
   <div class="mx-auto px-6 py-6 flex justify-center">
     <form class="flex gap-5" action="#">
       <div class="relative flex w-[520px] rounded-full">
@@ -200,12 +200,12 @@
         <input
           type="text"
           placeholder="Search destination"
-          class="w-full h-[64px] rounded-full border border-gray-300 bg-gray-50 py-3 pl-15 pr-4 text-[18px] focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
+          class="w-full h-[64px] rounded-full border border-gray-200 bg-gray-50 py-3 pl-15 pr-4 text-[18px] focus:border-blue-500 focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <button
         type="submit"
-        class="rounded-full bg-blue-600 px-8 text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        class="rounded-full bg-blue-600 px-8 text-[24px] w-[170px] h-[64px] text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
         Search
       </button>

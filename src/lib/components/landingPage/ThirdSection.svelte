@@ -45,7 +45,7 @@
   <!-- CTA Button -->
   <div class="mb-12">
     <button
-      class="bg-blue-600 text-white px-12 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-2xl light-font"
+      class="bg-primary text-white px-12 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-2xl light-font"
     >
       Discover <i class="fa-solid fa-circle-arrow-right"></i>
     </button>
@@ -58,7 +58,7 @@
     <!-- Cards -->
     {#each discoverOptions as card}
       <div
-        class="bg-gradient-to-br from-blue-500 to-blue-900 text-white p-5
+        class="card text-white p-5
                 rounded-2xl text-left w-sm h-60
                 flex flex-row justify-center items-center"
       >
@@ -73,3 +73,9 @@
     {/each}
   </div>
 </section>
+
+<style>
+  .card {
+    background: linear-gradient(to bottom right, #1873cc, #003f7c);
+  }
+</style>

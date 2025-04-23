@@ -24,7 +24,7 @@
 
 <!-- Title -->
 <h1
-  class="text-3xl font-light italic text-blue-800 pb-1 font-satisfy flex flex-row"
+  class="text-3xl font-light italic text-primary pb-1 font-satisfy flex flex-row"
 >
   <div class={lineStyle}></div>
 

@@ -10,14 +10,14 @@
   <div class="grid grid-cols-3 gap-6 text-[18px] ml-[20px]">
     <div class="">
       <h3 class="font-semibold {listSpacing} bullet">Luxury</h3>
-      <ul class="text-blue-600">
+      <ul class="text-primary">
         <li class={listSpacing}>The St. Regis Maldives</li>
         <li class={listSpacing}>Baros Maldives</li>
       </ul>
     </div>
     <div>
       <h3 class="font-semibold {listSpacing} bullet">Mid Range</h3>
-      <ul class="text-blue-600">
+      <ul class="text-primary">
         <li class={listSpacing}>Reethi Beach Resort</li>
         <li class={listSpacing}>Kurumba Resort & Spa</li>
         <li class={listSpacing}>Meeru Island Resort</li>
@@ -25,7 +25,7 @@
     </div>
     <div>
       <h3 class="font-semibold {listSpacing} bullet">Budget Friendly</h3>
-      <ul class="text-blue-600">
+      <ul class="text-primary">
         <li class={listSpacing}>Maafushi Dive Lodge</li>
         <li class={listSpacing}>Kaani Palm Beach</li>
       </ul>

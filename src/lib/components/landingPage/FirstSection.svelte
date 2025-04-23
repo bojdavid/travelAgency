@@ -46,7 +46,7 @@
 
   <!-- Headline -->
   <h1 class="text-6xl font-bold mb-10 mt-20">
-    Plan. Book. <span class="text-blue-500">Travel. ✈️</span> Repeat.
+    Plan. Book. <span class="travel-text">Travel. ✈️</span> Repeat.
   </h1>
 
   <!-- Subtext -->
@@ -58,7 +58,7 @@
   <!-- CTA Buttons -->
   <div class="flex justify-center gap-6 mb-16 w-[480px] mx-auto">
     <button
-      class="bg-blue-500 text-white px-8 py-4 rounded-full hover:bg-blue-600 transition w-[220px] text-2xl"
+      class="bg-primary text-white px-8 py-4 rounded-full hover:bg-blue-600 transition w-[220px] text-2xl"
     >
       Book a trip →
     </button>
@@ -90,3 +90,9 @@
     </div>
   </div>
 </section>
+
+<style>
+  .travel-text {
+    color: #1873cc;
+  }
+</style>

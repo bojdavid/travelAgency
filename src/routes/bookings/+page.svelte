@@ -4,7 +4,7 @@
   import WhereToStay from "$lib/components/bookings/whereToStay.svelte";
   import NewsLetter from "$lib/components/NewsLetter.svelte";
 
-  const headingStyle: string = "text-[24px] font-[500] text-blue-700 mb-2";
+  const headingStyle: string = "text-[24px] font-[500] text-primary mb-2";
   const whereToStayListHeading = "text-[20px] font-[500] leading-[27px]";
   const marginBottom: string = "mb-[8em]";
 
@@ -35,7 +35,7 @@
 
     <!-- Button -->
     <button
-      class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition w-[500px] p-[10px] h-[64px] text-[24px]"
+      class="bg-primary text-white px-6 py-2 rounded-full hover:bg-blue-700 transition w-[500px] p-[10px] h-[64px] text-[24px]"
       >Book trip</button
     >
 

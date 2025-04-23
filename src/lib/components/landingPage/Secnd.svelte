@@ -124,7 +124,7 @@
   <!-- CTA Button -->
   <div class="my-12 flex justify-center">
     <button
-      class="bg-blue-600 text-white px-12 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-2xl light-font"
+      class="bg-primary text-white px-12 py-4 rounded-full font-semibold hover:bg-blue-700 transition text-2xl light-font"
     >
       Discover <i class="fa-solid fa-circle-arrow-right"></i>
     </button>
@@ -136,9 +136,9 @@
   <button
     onclick={previousCard}
     aria-label="prev"
-    class="absolute left-5 bg-gray-100 hover:bg-gray-200 p-4 rounded-full text-xl shadow"
+    class="absolute left-3 bg-gray-100 hover:bg-gray-200 p-5 rounded-full text-5xl shadow"
   >
-    <i class="fa-solid fa-circle-left"></i>
+    <i class="fa-solid fa-arrow-left-long"></i>
   </button>
 
   <!-- Card Stack -->
@@ -172,8 +172,8 @@
   <button
     onclick={nextCard}
     aria-label="next"
-    class="absolute right-5 bg-gray-100 hover:bg-gray-200 p-4 rounded-full text-xl shadow"
+    class="absolute right-2 bg-gray-100 hover:bg-gray-200 p-4 rounded-full text-5xl shadow"
   >
-    <i class="fa-solid fa-circle-right"></i>
+    <i class="fa-solid fa-arrow-right-long"></i>
   </button>
 </section>

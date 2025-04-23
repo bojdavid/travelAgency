@@ -5,6 +5,7 @@
 
 @theme {
     --font-sofia: "Sofia", sans-serif; 
-    --font-hanken: "Hanken Grotesk"
-    --font-satsify: "Satisfy"
+    --font-hanken: "Hanken Grotesk";
+    --font-satsify: "Satisfy";
+    --color-primary: #1873CC;
   }

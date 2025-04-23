@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from "$app/stores";
+
   interface navigation {
     nav: String;
     url: string;
@@ -9,6 +11,8 @@
     { nav: "Contact Us", url: "/contact_us" },
     { nav: "Pricing", url: "/pricing" },
   ];
+  const activeStyle: string =
+    "border-b-2 border-blue-100 pb-1 transition duration-200 ease-in-out";
 </script>
 
 <div class="flex justify-center">
@@ -24,7 +28,7 @@
   >
     <ul class="flex justify-evenly gap-5 items-center">
       {#each navs as nav}
-        <li class="">
+        <li class=" {nav.url === $page.url.pathname ? activeStyle : ''}">
           <a href={nav.url}>
             {nav.nav}
           </a>
@@ -34,7 +38,13 @@
     <a
       href="/bookATrip"
       class="py-2 px-6 bg-stone-50 justify-end text-stone-950 rounded-full"
-      ><span class="m-0"> Book a trip </span>
+      ><span
+        class="m-0 {'/bookATrip' === $page.url.pathname
+          ? `${activeStyle} border-blue-500`
+          : ''}"
+      >
+        Book a trip
+      </span>
     </a>
   </nav>
 </div>

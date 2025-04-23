@@ -17,7 +17,7 @@
       class="border border-gray-300 px-4 text-[16px] py-2 rounded-2xl w-full mx-[10px] h-[60px] placeholder-gray-300"
     />
     <button
-      class="bg-blue-600 w-[300px] text-[24px] h-[64px] text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
+      class="bg-primary w-[300px] text-[24px] h-[64px] text-white px-6 py-2 rounded-full hover:bg-blue-700 transition"
       >Subscribe</button
     >
   </div>

@@ -26,4 +26,7 @@
   :global(.light-font) {
     font-weight: 400;
   }
+  :global(.primary_color) {
+    color: #1873cc;
+  }
 </style>

@@ -45,7 +45,7 @@
           See details <i class="fa-solid fa-circle-right"></i>
         </button>
         <button
-          class="px-3 py-3 rounded-full bg-blue-600 text-white text-2xl hover:bg-blue-700 transition"
+          class="px-3 py-3 rounded-full bg-primary text-white text-2xl hover:bg-blue-700 transition"
         >
           Book now <i class="fa-solid fa-circle-right"></i>
         </button>
